@@ -1,0 +1,1204 @@
+local Data={}
+----主页面
+Data.主页面=multiPoint:new({
+		{x=266,y=1038,color=0xffcfef},
+		{x=1545,y=852,color=0xfffff7},
+		{x=1675,y=845,color=0xffffff},
+		{x=1658,y=846,color=0xef4d4a},
+		{x=1824,y=857,color=0xe7496b},
+		{x=1734,y=86,color=0xfffbff},
+		_tag="主页面",
+	})
+Data.公告=multiPoint:new({
+		{x=242,y=85,color=0x4a86de},
+		{x=235,y=168,color=0x4271d6},
+		{x=782,y=157,color=0xefeff3},
+		{x=1415,y=167,color=0xe7ebef},
+		{x=852,y=952,color=0xffffff},
+		{x=336,y=950,color=0xfff7f7},
+		{x=1540,y=992,color=0xfff7f7},
+		index={x=978,y=961},_tag='公告',
+	})
+Data.剧情=multiPoint:new({
+		{x=50,y=50,color=0x6ba2ff},
+		{x=273,y=1050,color=0xeff3f7},
+		{x=596,y=1054,color=0xbde784},
+		{x=774,y=1053,color=0xbdeb8c},
+		{x=1825,y=47,color=0x4386ff},
+		_tag='剧情'
+	})
+Data.主页面_钻石=multiPoint:new({
+		Area={520,104,610,141},
+	})
+Data.公会之家_未解锁=multiPoint:new({
+		{x=1159,y=1004,color=0x312821},
+		{x=1135,y=1050,color=0xadaebd},
+		{x=1327,y=1052,color=0xa5aab5},
+		_tag='公会之家_未解锁'
+	})
+Data.公会之家=multiPoint:new({
+		{x=1726,y=155,color=0x6b9eff},
+		{x=1841,y=141,color=0xf7f7f7},
+		{x=1803,y=252,color=0x6ba1ff},
+		{x=1801,y=264,color=0x6b9fff},
+		{x=1799,y=279,color=0x6b9eff},
+		{x=1351,y=1057,color=0xffb3a5},
+		{x=86,y=814,color=0xffc7d6},
+		_tag='公会之家'
+	})
+Data.快速跳过=multiPoint:new({
+		{x=1788,y=73,color=0x6f9eff},
+		{x=1767,y=75,color=0x6ba2ff},
+		{x=1744,y=63,color=0xffffff},
+		{x=1827,y=70,color=0xffffff},
+		_tag='快速跳过',index={x=1787,y=74}
+	})
+Data.公会之家_全部收取=point:new({x=1803,y=848,color=0xffeac6})
+Data.主页_行会=point:new({x=1385,y=864,color=0x6f8eeb})
+Data.主页_冒险=point:new({x=958,y=1031,color=0xfcdc70})
+Data.主页_任务=point:new({x=1674,y=865,color=0xf3ca62})
+Data.主页_礼物=point:new({x=1814,y=867,color=0xe9dce0})
+Data.主页_公会之家=point:new({x=1248,y=1029,color=0xdd9a63})
+Data.主页_我的主页=point:new({x=185,y=1028,color=0x945146})
+Data.主页_主菜单=point:new({x=1753,y=1029,color=0x4c6660})
+Data.主页_购买体力=point:new({x=640,y=58,color=0xffffff})
+Data.主页_购买玛那=point:new({x=373,y=117,color=0xb9d6ff})
+----////////////////////////////////////////////////////////////////////////////
+--购买mana
+Data.购买玛那=multiPoint:new({
+		{x=424,y=953,color=0xffffff},
+		{x=689,y=925,color=0x5a96f7},
+		{x=312,y=792,color=0x5a96f7},
+		{x=302,y=852,color=0x5a96f7},
+		{x=138,y=134,color=0xffffff},
+		{x=719,y=148,color=0xefeff6},
+		{x=991,y=138,color=0x7baaef},
+		{x=1781,y=94,color=0x4a8efc},
+		_tag='购买玛那',Area={834,897,960,941},
+	})
+Data.Mana购买确认=multiPoint:new({
+		{x=574,y=288,color=0x4a8ade},
+		{x=1340,y=293,color=0x4a82de},
+		{x=797,y=532,color=0x5a96f7},
+		{x=793,y=600,color=0x5a96f7},
+		{x=821,y=743,color=0xffffff},
+		{x=1095,y=738,color=0x4b96ff},
+		{x=1333,y=750,color=0x4a8aff},
+		_tag='购买确认',index={x=1093,y=728}
+	})
+Data.购买玛那1次=point:new({x=1192,y=957,color=0x466fcd})
+Data.购买玛那10次=point:new({x=1618,y=944,color=0x253050})
+Data.购买玛那_取消=point:new({x=302,y=943,color=0x7b7b7b})
+----////////////////////////////////////////////////////////////////////////////
+--礼物箱
+Data.领取礼物=multiPoint:new({
+		{x=1792,y=807,color=0xcf527b},
+		{x=1848,y=808,color=0xd35176},
+		_tag='领取礼物',fuzz=80,
+	})
+Data.礼物箱=multiPoint:new({
+		{x=1088,y=952,color=0xfcfafc},
+		{x=1274,y=950,color=0xf7f7f7},
+		{x=418,y=947,color=0xffffff},
+		{x=176,y=950,color=0xffffff},
+		{x=136,y=81,color=0x4a8ade},
+		{x=1689,y=81,color=0x4a8ade},
+		{x=1344,y=160,color=0x6ba2ff},
+		_tag='礼物箱'
+	})
+Data.礼物箱_全部收取=multiPoint:new({
+		{x=1156*1.5,y=641*1.5,color=0x4a86ff},
+		{x=1153*1.5,y=620*1.5,color=0x7bcfff},
+		_tag='礼物箱_全部收取',index={x=1081*1.5,y=631*1.5}
+	})
+Data.收取礼物_确认=multiPoint:new({
+		{x=719,y=84,color=0x4a86de},
+		{x=1245,y=85,color=0x4a84de},
+		{x=882,y=956,color=0xffffff},
+		{x=1113,y=959,color=0x4a8eff},
+		_tag='收取礼物_确认',index={x=1136,y=961},
+	})
+Data.收取礼物_结算=multiPoint:new({
+		{x=719,y=84,color=0x4a86de},
+		{x=1245,y=85,color=0x4a84de},
+		{x=882,y=956,color=0xffffff},
+		{x=1113,y=959,color=0xffffff},
+		_tag='收取礼物_结算',index={x=957,y=947}
+	})
+Data.礼物盒_全部收取=point:new({x=1502,y=949,color=0x4a94ff})
+----////////////////////////////////////////////////////////////////////////////
+--任务页面
+Data.领取任务=multiPoint:new({
+		{x=1647,y=807,color=0xdf5674},
+		{x=1702,y=808,color=0xde5673},
+		_tag='领取任务',fuzz=80,
+	})
+Data.任务页面=multiPoint:new({
+		{x=46,y=47,color=0x649bff},
+		{x=778,y=770,color=0xefebdf},
+		{x=1768,y=757,color=0xefe8e7},
+		{x=967,y=756,color=0xef4a4a},
+		_tag='任务页面'
+	})
+Data.任务页面_每日=multiPoint:new({
+		{x=753,y=43,color=0x4a82de},
+		{x=1079,y=55,color=0x4275d6},
+		{x=713,y=899,color=0x5a96f7},
+		{x=1193,y=904,color=0x5a96f7},
+		{x=49,y=52,color=0x6ba2ff},
+		_tag='任务页面_每日',index={x=840,y=53},
+	})
+Data.任务页面_普通=multiPoint:new({
+		{x=1389,y=44,color=0x4a81de},
+		{x=1734,y=55,color=0x4273d6},
+		_tag='任务页面_普通',index={x=1443,y=54}
+	})
+Data.任务_每日=point:new({x=659,y=42,color=0x4a83de})
+Data.任务_普通=point:new({x=1837,y=43,color=0xeff5f7})
+Data.任务_全部收取=point:new({x=1566,y=878,color=0x4a8eff})
+Data.任务_瞎点=point:new({x=90,y=408,color=0xa48f7e})
+----////////////////////////////////////////////////////////////////////////////
+---冒险
+Data.冒险=multiPoint:new({
+		{x=1226,y=293,color=0xffc38c},
+		{x=997,y=284,color=0xf7f7f7},
+		{x=1125,y=244,color=0x7b7184},
+		{x=849,y=1056,color=0xa5d7fe},
+		{x=1077,y=1054,color=0xa5d9f7},
+		_tag="冒险",
+	})
+Data.冒险_主线关卡=point:new({x=1133,y=417,color=0x54493b})
+Data.冒险_地下城=point:new({x=1741,y=264,color=0xffffef})
+Data.冒险_活动=point:new({x=831,y=834,color=0x5c4c4b})
+----////////////////////////////////////////////////////////////////////////////
+---主线关卡
+Data.主线关卡=multiPoint:new({
+		{x=53,y=50,color=0x6ba2ff},
+		{x=839,y=1057,color=0xa5ddff},
+		{x=1839,y=849,color=0xef4d4a},
+		{x=1822,y=848,color=0xffffff},
+		{x=1826,y=149,color=0xf7f3f7},
+		_tag="主页关卡",
+	})
+Data.HARD=multiPoint:new({
+		{x=1580,y=165,color=0xcf7a85},
+		{x=1733,y=170,color=0xc67984},
+		{x=1713,y=152,color=0xffc1b4},
+		{x=1713,y=179,color=0xc66673},
+		_tag='HARD'
+	})
+Data.体力回复=multiPoint:new({
+		{x=578,y=292,color=0x4a84de},
+		{x=1344,y=291,color=0x4a86de},
+		{x=735,y=457,color=0x5a96f7},
+		{x=729,y=502,color=0x5a96f7},
+		{x=1131,y=513,color=0x5a96f7},
+		{x=750,y=650,color=0xee484a},
+		{x=851,y=743,color=0xffffff},
+		{x=1287,y=736,color=0x5296ff},
+		{x=1117,y=453,color=0xfff7f7},
+		_tag='体力回复'
+	})
+Data.回复次数=multiPoint:new({
+		Area={1062,628,1166,665},
+	})
+Data.关卡一图=multiPoint:new({
+		{x=211,y=563,color=0x9f9787}, --1
+		{x=254,y=832,color=0x785c4a}, --2
+		{x=286,y=374,color=0xa8b7ea}, --3
+		{x=389,y=482,color=0x6498cf}, --4
+		{x=280,y=403,color=0x88806d}, --5
+		{x=400,y=768,color=0x90a6b4}, --6
+		{x=558,y=393,color=0xc3c0c2}, --7
+		{x=385,y=489,color=0xbbd6d1}, --8
+		{x=387,y=393,color=0xf9fcff}, --9
+		{x=300,y=385,color=0x99888d}, --10
+		{x=338,y=650,color=0xfff8ce}, --11
+		{x=361,y=393,color=0xb0a491}, --12
+		{x=251,y=382,color=0xa8aaa8}, --13
+		{x=255,y=528,color=0xdad3a9}, --14
+		{x=275,y=451,color=0xdae9f0}, --15
+		{x=268,y=754,color=0xd6d7de},
+	})
+Data.normal=point:new({x=1405,y=147,color=0xffffff})
+Data.上一章=point:new({x=44,y=548,color=0xf6f4ff})
+Data.下一章=point:new({x=1870,y=542,color=0xfffbff})
+Data.主线关卡_体力回复=point:new({x=1316,y=58,color=0x8fb3fc})
+----////////////////////////////////////////////////////////////////////////////
+---关卡页面
+Data.关卡页面=multiPoint:new({
+		{x=192,y=522,color=0x6b6883},
+		{x=179,y=523,color=0xf78a7d},
+		{x=178,y=691,color=0xd69863},
+		{x=107,y=757,color=0xffffff},
+		{x=175,y=871,color=0xffffb1},
+		{x=1230,y=905,color=0xffffff},
+		_tag='关卡页面'
+	})
+Data.关卡页面_地下城=multiPoint:new({	--地下城关卡
+		{x=191,y=672,color=0x6b667d},
+		{x=173,y=860,color=0xd69663},
+		{x=1266,y=912,color=0xffffff},
+		{x=1592,y=917,color=0x4a89ff},
+		{x=1382,y=782,color=0x5a96f7},
+		{x=959,y=585,color=0x5a96f7},
+		{x=443,y=586,color=0x5a96f7},
+		_tag='关卡页面'
+	})
+Data.地图三星=multiPoint:new({
+		{x=1526,y=72,color=0x8caad6},
+		--	{x=1653,y=73,color=0x8caad6},
+		--	{x=1781,y=71,color=0x8caad6},
+		_tag='地图三星',
+	})
+Data.扫荡确认=multiPoint:new({
+		{x=673,y=81,color=0x4a87de},
+		{x=1250,y=87,color=0x4a82de},
+		{x=826,y=79,color=0x4a8ade},
+		{x=849,y=961,color=0xffffff},
+		{x=1073,y=957,color=0xffffff},
+		_tag='扫荡确认',index={x=961,y=956}
+	})
+Data.限定商店=multiPoint:new({
+		{x=630,y=287,color=0x4a8ade},
+		{x=1248,y=293,color=0x4a82de},
+		{x=843,y=742,color=0xffffff},
+		{x=1344,y=734,color=0x4b95f8},
+		{x=773,y=604,color=0xfff7f7},
+		{x=1287,y=628,color=0xfff7f7},
+		_tag='限定商店',index={x=734,y=738}
+	})
+Data.等级提升=multiPoint:new({
+		{x=630,y=295,color=0x4a82de},
+		{x=1289,y=293,color=0x4a82de},
+		{x=849,y=743,color=0xffffff},
+		{x=1077,y=743,color=0xffffff},
+		{x=1276,y=743,color=0xfff7f7},
+		{x=1148,y=592,color=0xff7e00},
+		_tag='等级提升',index={x=957,y=741}
+	})
+Data.超出上限道具=multiPoint:new({
+		{x=575,y=302,color=0x4279d6},
+		{x=1335,y=289,color=0x4a88de},
+		{x=847,y=737,color=0xffffff},
+		{x=1083,y=735,color=0xfffeff},
+		{x=964,y=581,color=0xfff7f7},
+		_tag='超出上限道具',index={x=957,y=731}
+	})
+Data.扫荡跳过=multiPoint:new({
+		{x=565,y=82,color=0x4a86de},
+		{x=1343,y=81,color=0x4a87de},
+		{x=596,y=952,color=0xfff7f7},
+		{x=1331,y=947,color=0xfff7f7},
+		{x=826,y=957,color=0x4a82ff},
+		{x=1056,y=957,color=0x4a92ff},
+		_tag='扫荡跳过',index={x=961,y=953},
+	})
+Data.队伍编组=multiPoint:new({
+		{x=193,y=82,color=0x4a88de},
+		{x=1827,y=83,color=0x4a86de},
+		{x=1239,y=903,color=0xffffff},
+		{x=883,y=718,color=0x5a96f7},
+		{x=112,y=721,color=0x7baaef},
+		{x=1373,y=174,color=0x6ba2ff},
+		_tag='队伍编组',
+	})
+Data.扫荡券确认=multiPoint:new({
+		{x=587,y=289,color=0x4a86de},
+		{x=1297,y=292,color=0x4a84de},
+		{x=721,y=551,color=0x5a96f7},
+		{x=710,y=615,color=0x5a96f7},
+		{x=1127,y=553,color=0x5a96f7},
+		{x=1118,y=603,color=0x5a96ef},
+		{x=622,y=740,color=0xffffff},
+		_tag='扫荡券确认',index={x=1204,y=731},
+	})
+Data.团队战CP=multiPoint:new({
+		{x=677,y=179,color=0x497dde},
+		{x=1157,y=172,color=0x4a86de},
+		{x=899,y=647,color=0x5a96f7},
+		{x=686,y=640,color=0x5a96f7},
+		{x=594,y=766,color=0xef534a},
+		{x=661,y=866,color=0xffffff},
+		{x=1066,y=868,color=0x4a8eff},
+		_tag='团队战CP',index={x=664,y=863}
+	})
+Data.团队战=multiPoint:new({
+		{x=50,y=50,color=0x6ba2ff},
+		{x=687,y=867,color=0xf8fbff},
+		{x=834,y=795,color=0x5a96f7},
+		{x=1083,y=1062,color=0xacdfff},
+		{x=845,y=1058,color=0xa3d7ff},
+		{x=1490,y=50,color=0x6b92ef},
+		_tag='团队战'
+	})
+Data.战斗_队伍编组=multiPoint:new({
+		{x=193,y=85,color=0x4a86de},
+		{x=1538,y=85,color=0x4a86de},
+		{x=249,y=172,color=0x4a84de},
+		{x=1263,y=906,color=0xffffff},
+		{x=1567,y=904,color=0x4a90ff},
+		{x=1371,y=176,color=0x6ba2ff},
+		_tag='队伍编组'
+	})
+Data.Boss=multiPoint:new({
+		{x=317,y=483,color=0xf02f2f},
+		{x=449,y=484,color=0xef3031},
+		{x=319,y=625,color=0xf32e2d},
+		{x=310,y=548,color=0xef3031},
+		_tag='Boss',
+	})
+Data.下一关按钮识别=multiPoint:new({
+		Area={1833,449,1920,551},
+		{x=1871,y=462,color=0xf8f8ff},
+		{x=1886,y=478,color=0xefeff7},
+		{x=1900,y=498,color=0xfffbff},
+		{x=1888,y=513,color=0xfffdff},
+		{x=1871,y=531,color=0xfffeff},fuzz=98
+	})
+Data.可以扫荡=multiPoint:new({
+		{x=1398,y=664,color=0x4a90ff},
+		{x=1608,y=669,color=0x4a8bff},
+		{x=1257,y=665,color=0x6b9fff},
+		{x=1256,y=650,color=0xfffbff},
+		_tag='可以扫荡'
+	})
+Data.上一关=point:new({x=48,y=492,color=0xf7f4ff})
+Data.下一关=point:new({x=1882,y=496,color=0xfffbff})
+Data.扫荡结束=point:new({x=885,y=960,color=0xffffff})
+Data.无法扫荡=point:new({x=1393,y=659,color=0x295bad})
+Data.关卡页面_取消=point:new({x=1327,y=903,color=0x595e69})
+Data.关卡页面_确定=point:new({x=1678,y=906,color=0x436dc3})
+Data.关卡页面_增加扫荡券=point:new({x=1756,y=660,color=0x6b9eff})
+Data.关卡页面_使用扫荡券=point:new({x=1518,y=666,color=0x4a8eff})
+Data.关卡页面_取消=point:new({x=1331,y=908,color=0xfffcff})
+----////////////////////////////////////////////////////////////////////////////
+---战斗中
+Data.三倍速=multiPoint:new({ --从两倍速切换成三倍速
+		{x=1788,y=976,color=0x5aadf7},
+		{x=1809,y=977,color=0xffffff},
+		{x=1832,y=977,color=0xffffff},
+		tag='两倍速',index={x=1830,y=990}
+	})
+Data.战斗失败=multiPoint:new({
+		{x=753,y=57,color=0x8ccfde},
+		{x=866,y=75,color=0x7dbbd6},
+		{x=970,y=148,color=0x4a75b5},
+		{x=1121,y=71,color=0x84bed6},
+		{x=1482,y=78,color=0xefeff7},
+		{x=1479,y=989,color=0x4a8bff},
+		{x=1291,y=987,color=0xffffff},
+		_tag='战斗失败',index={x=1498,y=977}
+	})
+Data.体力不足_挑战=multiPoint:new({
+		{x=628,y=288,color=0x4a8ade},
+		{x=1252,y=291,color=0x4a86de},
+		{x=854,y=745,color=0xffffff},
+		{x=1096,y=735,color=0x529aff},
+		{x=690,y=547,color=0xfff7f7},
+		_tag='体力不足_挑战',index={x=800,y=737}--取消
+	})
+Data.关卡重试=multiPoint:new({
+		{x=585,y=298,color=0x4a7dd6},
+		{x=1294,y=287,color=0x4a8ade},
+		{x=626,y=544,color=0x5a96ef},
+		{x=775,y=543,color=0x5a96ef},
+		{x=854,y=739,color=0xffffff},
+		{x=1029,y=737,color=0x5195ff},
+		_tag='关卡重试',index={x=1179,y=737} --ok
+	})
+Data.战斗中=multiPoint:new({
+		{x=458,y=47,color=0xffffff},
+		{x=231,y=50,color=0xf7ffff},
+		{x=1746,y=55,color=0xffffff},
+		{x=1541,y=45,color=0xf7faf7},
+		{x=399,y=38,color=0xd69663},
+		_tag='战斗中'
+	})
+Data.战斗中_地下城=multiPoint:new({
+		{x=1501,y=45,color=0xf4fbff},
+		{x=1597,y=50,color=0xf7fbff},
+		{x=1741,y=48,color=0xffffff},
+		{x=1859,y=53,color=0xffffff},
+		{x=1464,y=34,color=0xc68e52},
+		_tag='战斗中_地下城'
+	})
+Data.战斗中_菜单=multiPoint:new({
+		{x=623,y=289,color=0x4a88de},
+		{x=1248,y=284,color=0x528ede},
+		{x=600,y=733,color=0x529aff},
+		{x=714,y=367,color=0x5a96ef},
+		{x=1186,y=741,color=0xffffff},
+		{x=1037,y=738,color=0xffffff},
+		_tag='战斗中_菜单'
+	})
+Data.战斗中_放弃关卡=multiPoint:new({
+		{x=679,y=294,color=0x4a82de},
+		{x=1293,y=295,color=0x4a82de},
+		{x=660,y=737,color=0xffffff},
+		{x=842,y=745,color=0xffffff},
+		{x=1069,y=734,color=0x5299ff},
+		{x=1307,y=732,color=0x5297f7},
+		_tag='战斗中_放弃关卡'
+	})
+Data.战斗结束=multiPoint:new({
+		{x=639,y=359,color=0x52be94,offset=0x202820},
+		{x=1398,y=358,color=0xffffff,offset=0x202820},
+		{x=1567,y=1006,color=0x4a92fd,offset=0x202820},
+		{x=1787,y=1005,color=0x4a92ff,offset=0x202820},
+		{x=1803,y=172,color=0x6b9cfe,offset=0x202820},
+		_tag='战斗结束',
+	})
+Data.战斗结束_地下城=multiPoint:new({
+		{x=734,y=253,color=0xffe752},
+		{x=818,y=249,color=0xffe752},
+		{x=905,y=246,color=0xffe752},
+		{x=1171,y=277,color=0xffe14a},
+		{x=1782,y=73,color=0xeff1f7},
+		{x=1541,y=1013,color=0x4a8aff},
+		_tag='战斗结束'
+	})
+Data.获得道具=multiPoint:new({
+		{x=794,y=298,color=0xc63929,offset=0x202820},
+		{x=1123,y=297,color=0xc63c29,offset=0x202820},
+		{x=1567,y=953,color=0x84d6ff,offset=0x202820},
+		{x=1756,y=996,color=0x4a82f7,offset=0x202820},
+		_tag='获得道具',
+	})
+Data.再次挑战=point:new({x=1320,y=978,color=0xf0eff1})
+Data.战斗开始=point:new({x=1672,y=903,color=0x4a87f2})
+Data.战斗中_auto=point:new({x=1828,y=825,color=0xfffbff})
+Data.战斗中_菜单按钮=point:new({x=1805,y=51,color=0x58585a})
+Data.战斗中_放弃=point:new({x=1254,y=748,color=0xf8f8fc})
+Data.战斗中_两倍速=point:new({x=1820,y=953,color=0xffffff})
+Data.关卡页面_挑战=point:new({x=1683,y=909,color=0x5d5e61})
+Data.下一步=point:new({x=1701,y=985,color=0xf8f9fc})
+----////////////////////////////////////////////////////////////////////////////
+---主菜单
+Data.主菜单=multiPoint:new({
+		{x=569,y=309,color=0xffffff},
+		{x=1158,y=307,color=0xffffff},
+		{x=1776,y=313,color=0xfffdff},
+		{x=242,y=537,color=0xffffff},
+		{x=696,y=533,color=0xffffff},
+		{x=1332,y=538,color=0xffffff},
+		{x=489,y=823,color=0xffffff},
+		{x=1647,y=1033,color=0xbdc9ff},
+		_tag='主菜单'
+	})
+Data.主菜单_钻石=multiPoint:new({
+		Area={1723,43,1840,75},
+	})
+Data.玩家等级=multiPoint:new({
+		Area={1517,328,1607,368},
+	})
+Data.简介=multiPoint:new({
+		{x=54,y=48,color=0x6ba2ff},
+		{x=1073,y=177,color=0x427ade},
+		{x=1516,y=178,color=0xe7ebef},
+		{x=1370,y=345,color=0x5a96f7},
+		{x=1366,y=412,color=0x5a96f7},
+		{x=1357,y=469,color=0x5a96f7},
+		{x=1119,y=655,color=0x5a96f7},
+		{x=1101,y=853,color=0x5a96f7},
+		_tag='简介页面',index={x=1612,y=849}
+	})
+Data.确认回到标题=multiPoint:new({
+		{x=679,y=291,color=0x4a86de},
+		{x=1195,y=293,color=0x4a82de},
+		{x=854,y=740,color=0xffffff},
+		{x=1256,y=746,color=0x4a8aff},
+		{x=1256,y=528,color=0xfff7f7},
+		{x=679,y=505,color=0xfff7f7},
+		_tag='确认回到标题',index={x=1174,y=733},
+	})
+Data.主菜单_简介=point:new({x=706,y=534,color=0xbebcc2})
+Data.主菜单_回到标题画面=point:new({x=326,y=825,color=0xcecfd1})
+
+----////////////////////////////////////////////////////////////////////////////
+--地下城
+Data.地下城=multiPoint:new({
+		{x=51,y=47,color=0x6ba2ff},
+		{x=841,y=1048,color=0xa5d9f7},
+		{x=1582,y=66,color=0x4a8af7},
+		{x=1833,y=49,color=0xe39d6c},
+		{x=187,y=753,color=0x5aaae7},
+		_tag='地下城',
+	})
+Data.云海的山脉=multiPoint:new({
+		{x=52,y=48,color=0x6ba2ff},
+		{x=278,y=869,color=0x5a96f7},
+		{x=670,y=864,color=0x5a96f7},
+		{x=1496,y=858,color=0xf7f8f8},
+		{x=1158,y=852,color=0x5a96f7},
+		{x=1701,y=84,color=0x49c1ff},
+		_tag='云海的山脉',index={x=250,y=333}
+	})
+Data.支援角色确认=multiPoint:new({
+		{x=632,y=84,color=0x4a86de},
+		{x=1245,y=86,color=0x4a82de},
+		{x=711,y=432,color=0x5a96f7},
+		{x=851,y=954,color=0xffffff},
+		{x=710,y=861,color=0x5a96f7},
+		{x=1127,y=856,color=0x5a96f7},
+		{x=1290,y=961,color=0x4a8cff},
+		_tag='支援角色确认',index={x=1179,y=958}
+	})
+Data.地下城次数=multiPoint:new({
+		Area={1763,856,1829,894},
+	})
+Data.地下城_第一层=point:new({x=1334,y=684,color=0x848d51})
+Data.撤退=point:new({x=1616,y=859,color=0xaaadb2})
+Data.撤退确认=point:new({x=1168,y=731,color=0x466aba})
+Data.队伍编组_成员1号位=point:new({x=1076,y=838,color=0xefebef})
+Data.队伍编组_支援=point:new({x=905,y=174,color=0x4a7ede})
+Data.队伍编组_支援1号位=point:new({x=310,y=522,color=0xefe3da})
+Data.队伍编组_支援2号位=point:new({x=421,y=531,color=0xefe3d6})
+Data.云海第一层=point:new({x=1341,y=693,color=0xc6cb7b})
+Data.大树第一层=point:new({x=696,y=653,color=0xb8a574})
+Data.商店_地下城=point:new({x=1685,y=874,color=0xeff3f7})
+Data.区域选择确定=point:new({x=1198,y=731,color=0x529dff})
+----////////////////////////////////////////////////////////////////////////////
+--行会
+Data.行会=multiPoint:new({
+		{x=77,y=697,color=0xf8f7f8},
+		{x=575,y=697,color=0xffffff},
+		{x=53,y=48,color=0x6ba2ff},
+		{x=1733,y=60,color=0x4a8aff},
+		{x=1826,y=57,color=0x4ac3ff},
+		{x=275,y=1047,color=0xffc7f7},
+		_tag="行会",
+	})
+Data.行会_已入会=multiPoint:new({
+		{x=47,y=48,color=0x6a9dff},
+		{x=386,y=707,color=0xf7f7f7},
+		{x=78,y=698,color=0xfefafe},
+		{x=1067,y=854,color=0xffffff},
+		{x=266,y=1043,color=0xffcff7},
+		{x=1610,y=60,color=0x4f8aff},
+		_tag="行会",
+	})
+Data.行会_成员信息=multiPoint:new({
+		{x=51,y=51,color=0x6ba2ff},
+		{x=269,y=1044,color=0xf7ccef},
+		{x=197,y=817,color=0x5a96ef},
+		{x=193,y=868,color=0x5a96ef},
+		{x=1599,y=182,color=0x6ba2ff},
+		_tag='成员信息',index={x=476,y=694}
+	})
+Data.成员信息_搜索成员=multiPoint:new({
+		{x=50,y=48,color=0x6ba2ff},
+		{x=707,y=65,color=0xfffbff},
+		{x=980,y=58,color=0xffffff},
+		{x=1327,y=59,color=0xffe273},
+		{x=162,y=757,color=0x5a96ee},
+		{x=268,y=1053,color=0xffc4ee},
+		_tag='成员信息_搜索成员',index={x=1415,y=60}
+	})
+Data.捐赠道具=multiPoint:new({
+		Area={1387,99,1810,804},
+		{x=1524,y=724,color=0x529aff},
+		{x=1707,y=729,color=0x4a87f9},
+		{x=1611,y=697,color=0xf7e1a4}, priority=screen.PRIORITY_LEFT_FIRST+screen.PRIORITY_DOWN_FIRST+screen.PRIORITY_HORIZONTAL_FIRST
+	})
+Data.确认捐赠=multiPoint:new({
+		{x=527,y=80,color=0x4a89de},
+		{x=1202,y=75,color=0x528fde},
+		{x=671,y=947,color=0xffffff},
+		{x=841,y=960,color=0xffffff},
+		{x=1345,y=775,color=0x4a86ff},
+		{x=671,y=692,color=0x5a96f7},
+		_tag='确认捐赠',
+	})
+Data.捐赠完毕=multiPoint:new({
+		{x=570,y=290,color=0x4a86de},
+		{x=1200,y=293,color=0x4a82de},
+		{x=1051,y=452,color=0xffffff},
+		{x=1059,y=515,color=0xffffff},
+		{x=650,y=676,color=0xfff7f7},
+		{x=1072,y=740,color=0xffffff},
+		{x=1330,y=722,color=0xfff7f7},
+		index={x=1004,y=733},_tag='捐赠完毕'
+	})
+Data.点赞确认=multiPoint:new({
+		{x=680,y=298,color=0x467dde},
+		{x=1246,y=292,color=0x4a84de},
+		{x=881,y=738,color=0xffffff},
+		{x=1070,y=739,color=0xffffff},
+		{x=689,y=567,color=0x5a96f7},
+		_tag='点赞确认',index={x=978,y=745}
+	})
+Data.捐赠请求数量=multiPoint:new({
+		{x=730,y=57,color=0xfffcf8},
+		{x=710,y=94,color=0xffa242},
+		{x=763,y=94,color=0xffa242},
+		_tag='捐赠请求数量',index={x=737,y=67}
+	})
+Data.加入行会=multiPoint:new({
+		{x=51,y=49,color=0x6ba2ff},
+		{x=999,y=151,color=0x5a96f7},
+		{x=1107,y=60,color=0x437dde},
+		{x=1677,y=150,color=0xf8fbff},
+		{x=1569,y=880,color=0x6b92ef},
+		{x=1814,y=882,color=0xf7f8fe},
+		{x=269,y=1058,color=0xffcaf7},
+		_tag='加入行会'
+	})
+Data.收取报酬=multiPoint:new({
+		{x=578,y=80,color=0x4a89de},
+		{x=1294,y=84,color=0x4a86de},
+		{x=1069,y=961,color=0xffffff},
+		{x=849,y=957,color=0xffffff},
+		{x=640,y=948,color=0xfff7f7},
+		{x=1243,y=955,color=0xfff7f7},
+		_tag='收取报酬',index={x=959,y=954}
+	})
+Data.行会_分类框=multiPoint:new({
+		{x=627,y=289,color=0x4a88de},
+		{x=1289,y=288,color=0x4a8ade},
+		{x=629,y=742,color=0xffffff},
+		{x=1082,y=734,color=0x5296f7},
+		_tag='行会_分类框',index={x=1173,y=741}, --ok
+	})
+Data.行会_降序=multiPoint:new({
+		{x=1810,y=173,color=0x6396ff},
+		{x=1786,y=184,color=0x6ba0ff},
+		{x=1800,y=194,color=0xefeff7},
+		_tag='行会_降序',index={x=1759,y=185}
+	})
+Data.确认开除=multiPoint:new({
+		{x=627,y=290,color=0x4a86de},
+		{x=1249,y=290,color=0x4a86de},
+		{x=829,y=660,color=0xef4a4a},
+		{x=661,y=740,color=0xffffff},
+		{x=1052,y=736,color=0x5298ff},
+		_tag='确认开除',index={x=1179,y=737}
+	})
+Data.行会_成员管理=multiPoint:new({
+		{x=584,y=86,color=0x4a82de},
+		{x=1299,y=82,color=0x4a86de},
+		{x=920,y=335,color=0x5a96ef},
+		{x=929,y=390,color=0x5a96ef},
+		{x=712,y=486,color=0x5a96ef},
+		{x=696,y=688,color=0x5a96ef},
+		{x=877,y=955,color=0xffffff},
+		_tag='行会_成员管理'
+	})
+Data.玩家ID搜索=multiPoint:new({
+		{x=622,y=291,color=0x4a85de},
+		{x=1292,y=295,color=0x4a81de},
+		{x=825,y=393,color=0x5a96ee},
+		{x=816,y=597,color=0x5a96ee},
+		{x=1349,y=594,color=0x6ba2ff},
+		{x=876,y=732,color=0xf7f7f7},
+		{x=1104,y=738,color=0x5296ff},
+		{x=1233,y=600,color=0xe6e7ee},
+		_tag='玩家ID搜索'
+	})
+Data.行会邀请=multiPoint:new({
+		{x=628,y=180,color=0x4a7dd6},
+		{x=1292,y=173,color=0x4a85de},
+		{x=943,y=400,color=0x5a96ee},
+		{x=908,y=548,color=0x8c96b5},
+		{x=838,y=878,color=0xf7f7f7},
+		{x=1252,y=866,color=0x4a91ff},
+		_tag='行会邀请',index={x=1175,y=862}
+	})
+Data.邀请成功=multiPoint:new({
+		{x=676,y=293,color=0x4a84de},
+		{x=1245,y=290,color=0x4a85de},
+		{x=1036,y=746,color=0x4a8aff},
+		{x=747,y=527,color=0xfff7f7},
+		{x=1368,y=715,color=0xfff7f7},
+		_tag='邀请成功',index={x=967,y=740}
+	})
+Data.行会_分类=point:new({x=1468,y=183,color=0xeff0f0})
+Data.行会_玩家等级=point:new({x=1019,y=466,color=0x4a86ef})
+Data.捐赠_MAX=point:new({x=1342,y=772,color=0x4a8afd})
+Data.捐赠_确认=point:new({x=1257,y=952,color=0x315dad})
+Data.开除=point:new({x=1300,y=342,color=0xb1b2b9})
+Data.成员信息_搜索设置=point:new({x=1690,y=176,color=0x95959e})
+Data.玩家ID搜索_玩家ID按钮=point:new({x=568,y=438,color=0xf7f7f7})
+Data.玩家ID搜索_搜索框=point:new({x=916,y=485,color=0x8c96b5})
+Data.玩家ID搜索_瞎点=point:new({x=942,y=297,color=0xe1e4ee})
+Data.玩家ID搜索_ok=point:new({x=1223,y=732,color=0x529eff})
+Data.玩家ID搜索_邀请=point:new({x=1695,y=350,color=0x848fc1})
+Data.成员信息_邀请=point:new({x=1686,y=353,color=0x42589c})
+Data.成员信息_退出=point:new({x=1790,y=61,color=0x4a515d})
+----////////////////////////////////////////////////////////////////////////////
+--登录页面
+Data.登录页面=multiPoint:new({
+		{x=793,y=309,color=0xffffff},
+		{x=1142,y=307,color=0xd0d0d0},
+		{x=1139,y=481,color=0xf2f2f2},
+		{x=897,y=661,color=0xffffff},
+		{x=1017,y=668,color=0x23ade5},
+		{x=1057,y=479,color=0xf2f2f2},
+		_tag='登录页面',Arry=_KDpi,
+		Anchor="Middle",MainPoint={x=960,y=540},
+	})
+Data.用户协议=multiPoint:new({
+		{x=700,y=304,color=0xffffff},
+		{x=1256,y=312,color=0xffffff},
+		{x=1354,y=511,color=0xdee1e8},
+		{x=1091,y=749,color=0x4fbdea},
+		{x=905,y=750,color=0xffffff},
+		_tag='用户协议',Arry=_KDpi,
+		Anchor="Middle",MainPoint={x=960,y=540},
+		
+	})
+Data.用户协议确定=point:new({x=1059,y=743,color=0xf2f2f2,Arry=_KDpi,Anchor="Middle",MainPoint={x=960,y=540}})
+Data.移动协议=Slide:new({
+		point=multiPoint:new({
+				{x=1351,y=424,color=0xb6bdca},
+				{x=1350,y=666,color=0xdee1e8},
+				Arry=_KDpi,Anchor="Middle",MainPoint={x=960,y=540},
+				}):getXY(),
+		steptime=30}
+)
+Data.登录页面错误=multiPoint:new({
+		{x=524,y=299,color=0x427cdd},
+		{x=768,y=290,color=0x4a86de},
+		{x=1149,y=293,color=0x4a82de},
+		{x=1341,y=291,color=0x4a86de},
+		{x=629,y=542,color=0xfff7f7},
+		{x=1334,y=521,color=0xfff7f7},
+		{x=819,y=741,color=0x4a8fff},
+		{x=1101,y=743,color=0x4a8eff},
+		_tag='登录页面错误',index={x=959,y=738}
+	})
+Data.登录_账号=point:new({x=1029,y=410,color=0xf2f2f2,Arry=_KDpi,Anchor="Middle",MainPoint={x=960,y=540}})
+Data.登录_密码=point:new({x=1021,y=473,color=0xf2f2f2,Arry=_KDpi,Anchor="Middle",MainPoint={x=960,y=540}})
+Data.登录_登录=point:new({x=1120,y=663,color=0x23ade5,Arry=_KDpi,Anchor="Middle",MainPoint={x=960,y=540}})
+Data.切换账号=point:new({x=1857,y=48,color=0xffffff})
+Data.兰德索尔竞速=multiPoint:new({
+		{x=258,y=424,color=0xde6163},
+		{x=1434,y=417,color=0x73a6de},
+		{x=274,y=803,color=0xf7fbff},
+		{x=660,y=795,color=0xf7fbff},
+		{x=1052,y=790,color=0xf7fbff},
+		{x=1444,y=800,color=0xf7fbff},
+		{x=1808,y=993,color=0x2951ad},
+		_tag='兰德索尔竞速',fuzz=100
+	})
+Data.兰德索尔竞速_一号位=point:new({x=388,y=811,color=0xd2d8eb})
+Data.竞速开始=multiPoint:new({
+		{x=253,y=407,color=0xde6163},
+		{x=265,y=814,color=0xff8a39},
+		_tag='竞速开始',index={x=1560,y=967}
+	})
+Data.安全认证=multiPoint:new({
+	{x=762,y=311,color=0x23ade5},
+	{x=1168,y=301,color=0xcccccc},
+	{x=1029,y=739,color=0x539ffe},
+	{x=824,y=738,color=0x7e7e7e},
+	{x=897,y=731,color=0x7e7e7e},
+	{x=869,y=746,color=0x7e7e7e},
+	_tag='登录页面',Arry=_KDpi,
+	Anchor="Middle",MainPoint={x=960,y=540},
+})
+Data.安全认证_确认=point:new({x=1058,y=739,color=0xbfdbff,Arry=_KDpi,Anchor="Middle",MainPoint={x=960,y=540}})
+Data.打码页面=multiPoint:new({
+	Area={800,340,325,375},
+	_tag='打码页面',Arry=_KDpi,
+	Anchor="Middle",MainPoint={x=960,y=540},
+})
+Data.打码_验证失败=multiPoint:new({
+	{x=940,y=701,color=0xde715b},
+	{x=1017,y=695,color=0xde715b},
+	{x=1101,y=693,color=0xde715b},
+	{x=1146,y=690,color=0xde715b},
+	{x=1023,y=737,color=0x4995f5},
+	{x=1071,y=705,color=0xde715b},
+	{x=1156,y=682,color=0xde715b},
+	_tag='打码_验证失败',Arry=_KDpi,
+	Anchor="Middle",MainPoint={x=960,y=540},
+})
+Data.安全认证_尝试过多=multiPoint:new({
+	{x=1164,y=301,color=0xcccccc},
+	{x=961,y=506,color=0xde715b},
+	{x=961,y=523,color=0xde715b},
+	{x=854,y=649,color=0x8a9dca},
+	{x=1070,y=658,color=0x8a9dca},
+	{x=1120,y=478,color=0xf7dbd6},
+	{x=1133,y=464,color=0xf7dbd6},
+	_tag='安全认证_尝试过多',Arry=_KDpi,
+	Anchor="Middle",MainPoint={x=960,y=540},
+})
+Data.退回打码页面=point:new({x=763,y=311,color=0x3db7e8,Arry=_KDpi,Anchor="Middle",MainPoint={x=960,y=540}})
+Data.网络不给力=multiPoint:new({
+	{x=762,y=311,color=0x23ade5},
+	{x=961,y=506,color=0xde715b},
+	{x=1120,y=479,color=0xf7dbd6},
+	{x=856,y=656,color=0x8a9dca},
+	{x=1074,y=654,color=0x8a9dca},
+	{x=1165,y=302,color=0xcccccc},
+	_tag='网络不给力',Arry=_KDpi,
+	Anchor="Middle",MainPoint={x=960,y=540},
+})
+Data.网络不给力_回退=point:new({x=763,y=310,color=0x3db7e8,Arry=_KDpi,Anchor="Middle",MainPoint={x=960,y=540}})
+Data.网络异常=multiPoint:new({ 
+	{x=737,y=301,color=0x44b5df},
+	{x=1156,y=302,color=0xcccccc},
+	{x=849,y=686,color=0x23ade5},
+	{x=882,y=524,color=0xf46f89},
+	{x=862,y=522,color=0xffffff},
+	{x=883,y=477,color=0x000000},
+	{x=1069,y=549,color=0x5c607f},
+	{x=1087,y=439,color=0x94d1f2},
+	_tag='网络不给力',Arry=_KDpi,
+	Anchor="Middle",MainPoint={x=960,y=540},
+})
+Data.网络异常_回退=point:new({x=737,y=302,color=0x3db7e8,Arry=_KDpi,Anchor="Middle",MainPoint={x=960,y=540}})
+Data.移动协议_异常=multiPoint:new({ 
+	{x=895,y=501,color=0x84c4e2},
+	{x=1082,y=508,color=0x94d1f2},
+	{x=897,y=566,color=0xffefeb},
+	{x=1041,y=545,color=0xffefeb},
+	{x=885,y=607,color=0xf46f89},
+	{x=1070,y=627,color=0x5c607f},
+	{x=1310,y=325,color=0xcccccc},
+	_tag='移动协议_异常',Arry=_KDpi,
+	Anchor="Middle",MainPoint={x=960,y=540},
+})
+Data.移动协议_回退=point:new({x=1317,y=323,color=0x3db7e8,Arry=_KDpi,Anchor="Middle",MainPoint={x=960,y=540}})
+----////////////////////////////////////////////////////////////////////////////
+Data.移动地图=Slide:new({
+		point=multiPoint:new({
+				{x=323,y=150,color=0xadd34a},
+				{x=1200,y=150,color=0xa9c451}
+				}):getXY(),
+		steptime=30}
+)
+Data.地图数据={
+	[1]=multiPoint:new({
+			{x=535,y=575,color=0xf7f3c6},
+			{x=709,y=569,color=0xf7f3c6},
+			{x=848,y=543,color=0xf7f3c6},
+			{x=1010,y=665,color=0xf7f3c6},
+			{x=1167,y=673,color=0xf7f3c6},
+			{x=1354,y=464,color=0xf7f3c6},
+			{x=1554,y=581,color=0xf7f3c6},
+			index={x=210,y=556},fuzz=95
+		}),
+	[2]=multiPoint:new({
+			{x=379,y=842,color=0xf7f3c6},
+			{x=647,y=807,color=0xf7f3c6},
+			{x=704,y=649,color=0xf7f3c6},
+			{x=565,y=493,color=0xf7f3c6},
+			{x=597,y=382,color=0xf7f3c6},
+			{x=802,y=411,color=0xf7f3c6},
+			{x=955,y=564,color=0xf7f3c6},
+			{x=1097,y=707,color=0xf7f3c6},
+			{x=1324,y=760,color=0xf7f3c6},
+			{x=1562,y=733,color=0xf7f3c6},
+			index={x=268,y=828},fuzz=95
+		}),
+	[3]=multiPoint:new({
+			{x=328,y=503,color=0xf7f3c6},
+			{x=514,y=535,color=0xf7f3c6},
+			{x=698,y=485,color=0xf8f2c7},
+			{x=798,y=582,color=0xf7f3c6},
+			{x=860,y=764,color=0xf7f3c6},
+			{x=1037,y=696,color=0xf7f3c6},
+			{x=1168,y=489,color=0xf7f3c6},
+			{x=1307,y=481,color=0xf7f3c6},
+			{x=1369,y=654,color=0xf7f3c6},
+			{x=1521,y=749,color=0xf7f3c6},
+			index={x=271,y=361},fuzz=95
+		}),
+	[4]=multiPoint:new({
+			{x=466,y=568,color=0xf7f3c6},
+			{x=679,y=598,color=0xf7f3c6},
+			{x=904,y=525,color=0xf7f3c6},
+			{x=1006,y=617,color=0xf7f3c6},
+			{x=1142,y=733,color=0xf7f3c6},
+			{x=1289,y=582,color=0xf7f3c6},
+			{x=1425,y=528,color=0xfef0cd},
+			{x=1670,y=521,color=0xf7f3c6},
+			index={x=397,y=489},fuzz=95
+		}),
+	[5]=multiPoint:new({
+			{x=398,y=404,color=0xf7f3c6},
+			{x=612,y=440,color=0xf7f3c6},
+			{x=869,y=481,color=0xf7f3c6},
+			{x=956,y=565,color=0xf7f3c6},
+			{x=794,y=753,color=0xf7f3c6},
+			{x=879,y=851,color=0xf8f2c7},
+			{x=1221,y=833,color=0xf8f3c6},
+			{x=1463,y=701,color=0xf7f3c6},
+			{x=1638,y=674,color=0xf7f3c6},
+			index={x=282,y=398},fuzz=95
+		}),
+	[6]=multiPoint:new({
+			{x=713,y=583,color=0xf7f3c6},
+			{x=796,y=650,color=0xf7f3c6},
+			{x=932,y=741,color=0xf7f3c6},
+			{x=1161,y=732,color=0xf7f3c6},
+			{x=1304,y=648,color=0xf7f3c6},
+			{x=1448,y=499,color=0xf7f3c6},
+			{x=1582,y=583,color=0xf7f3c6},
+			{x=1727,y=674,color=0xf7f3c6},
+			index={x=399,y=758},fuzz=95
+		}),
+	[7]=multiPoint:new({
+			{x=620,y=479,color=0xf7f3c6},
+			{x=821,y=524,color=0xf7f3c6},
+			{x=940,y=567,color=0xf7f3c6},
+			{x=1069,y=748,color=0xf7f3c6},
+			{x=1284,y=788,color=0xf7f3c6},
+			{x=1297,y=580,color=0xf7f3c6},
+			{x=1394,y=485,color=0xf7f3c6},
+			{x=1617,y=543,color=0xf7f3c6},
+			{x=1750,y=715,color=0xf7f3c6},
+			index={x=570,y=394},fuzz=95
+		}),
+	[8]=multiPoint:new({
+			{x=424,y=617,color=0xf7f3c6},
+			{x=565,y=699,color=0xf7f3c6},
+			{x=730,y=558,color=0xf7f3c6},
+			{x=1018,y=588,color=0xf7f3c6},
+			{x=1119,y=638,color=0xf7f3c6},
+			{x=1287,y=754,color=0xf7f3c6},
+			{x=1534,y=684,color=0xf7f3c6},
+			{x=1737,y=718,color=0xf7f3c6},
+			index={x=393,y=495},fuzz=95
+		}),
+	[9]=multiPoint:new({
+			{x=541,y=394,color=0xf7f3c6},
+			{x=776,y=432,color=0xf7f3c6},
+			{x=928,y=572,color=0xf7f3c6},
+			{x=1077,y=769,color=0xf7f3c6},
+			{x=1217,y=719,color=0xf7f3c6},
+			{x=1346,y=532,color=0xf7f3c6},
+			{x=1573,y=510,color=0xf7f3c6},
+			{x=1633,y=632,color=0xf7f3c6},
+			{x=1667,y=786,color=0xf7f3c6},
+			index={x=403,y=403},fuzz=95
+		}),
+	[10]=multiPoint:new({
+			{x=422,y=400,color=0xf7f3c6},
+			{x=700,y=446,color=0xf7f3c6},
+			{x=1039,y=480,color=0xf7f3c6},
+			{x=1127,y=562,color=0xf7f3c6},
+			{x=945,y=738,color=0xf7f3c6},
+			{x=1030,y=850,color=0xf7f3c6},
+			{x=1703,y=527,color=0xf7f3c6},
+			index={x=289,y=379},fuzz=95
+		}),
+	[11]=multiPoint:new({
+			{x=537,y=692,color=0xf7f3c6},
+			{x=740,y=516,color=0xf7f3c6},
+			{x=980,y=478,color=0xf3f3c6},
+			{x=914,y=759,color=0xf7f3c6},
+			{x=1005,y=852,color=0xf7f4c6},
+			{x=1400,y=560,color=0xf7f3c6},
+			{x=1641,y=486,color=0xf7f3c6},
+			{x=1728,y=582,color=0xf7f3c6},
+			index={x=329,y=636},fuzz=95
+		}),
+	[12]=multiPoint:new({
+			{x=342,y=504,color=0xf7f3c6},
+			{x=405,y=691,color=0xf7f3c6},
+			{x=578,y=672,color=0xf3f3c6},
+			{x=761,y=520,color=0xf7f3c6},
+			{x=1015,y=487,color=0xf7f4c6},
+			{x=1039,y=582,color=0xf7f3c6},
+			{x=982,y=783,color=0xf7f3c6},
+			{x=1244,y=800,color=0xf7f3c6},
+			index={x=329,y=636},fuzz=95
+		}),
+	[13]=multiPoint:new({
+			{x=359,y=385,color=0xf7f3c6},
+			{x=532,y=434,color=0xf7f3c6},
+			{x=757,y=515,color=0xf3f3c6},
+			{x=1001,y=487,color=0xf7f3c6},
+			{x=1040,y=593,color=0xf7f4c6},
+			{x=1065,y=745,color=0xf7f3c6},
+			{x=1332,y=767,color=0xf7f3c6},
+			index={x=329,y=636},fuzz=95
+		}),
+	[14]=multiPoint:new({
+			{x=305,y=632,color=0xf7f3c6},
+			{x=527,y=678,color=0xf7f3c6},
+			{x=685,y=674,color=0xf7f3c6},
+			{x=900,y=690,color=0xf7f3c6},
+			{x=1053,y=662,color=0xf7f3c6},
+			{x=1306,y=691,color=0xf7f3c6},
+			{x=1538,y=605,color=0xf7f3c6},
+			index={x=329,y=636},fuzz=95
+		}),
+	[15]=multiPoint:new({	
+			{x=395,y=435,color=0xf7f3c6},
+			{x=535,y=523,color=0xf7f3c6},
+			{x=639,y=735,color=0xf7f3c6},
+			{x=849,y=680,color=0xf7f3c6},
+			{x=1068,y=541,color=0xf7f3c6},
+			{x=1160,y=638,color=0xf7f3c6},
+			{x=1254,y=761,color=0xf7f3c6},
+			{x=1492,y=601,color=0xf7f3c6},
+			index={x=329,y=636},fuzz=95
+		}),
+	[16]=multiPoint:new({
+			{x=436,y=804,color=0xf7f3c6},
+			{x=538,y=658,color=0xf7f3c6},
+			{x=654,y=582,color=0xf7f3c6},
+			{x=900,y=681,color=0xf7f3c6},
+			{x=1086,y=645,color=0xf7f3c6},
+			{x=1315,y=506,color=0xf7f3c6},
+			{x=1423,y=589,color=0xf7f3c6},
+			{x=1521,y=728,color=0xf7f3c6},
+			index={x=329,y=636},fuzz=95	
+		}),
+}
+Data.行会_瞎点=point:new({x=475,y=50,color=0xaea07b})
+Data.瞎点_前往主线=point:new({x=760,y=18,color=0x425d7b})
+Data.瞎点=point:new({x=755,y=47,color=0xdedbf7})
+Data.瞎点取消关卡页面=point:new({x=541,y=10})
+Data.瞎点购买玛那=point:new({x=222,y=459,color=0x6b6563})
+Data.战斗结束_瞎点=point:new({x=370,y=63,color=0x314921})
+Data.战斗中瞎点=point:new({x=529,y=288,color=0x4a8ade})
+Data.购买Mana_瞎点=point:new({x=671,y=293,color=0x4a82de})
+Data.瞎点_开始挑战=point:new({x=724,y=100,color=0x4a84de})
+Data.瞎点_扫荡=point:new({x=547,y=168,color=0x6a7d7b})
+----////////////////////////////////////////////////////////////////////////////
+Data.下一步箭头=multiPoint:new({
+		{x=671,y=815,color=0xffd784},
+		{x=673,y=837,color=0xffd46b},
+		{x=645,y=838,color=0xffd36b},
+		{x=702,y=840,color=0xffd36b},
+		{x=636,y=824,color=0x6b2814},
+		{x=709,y=824,color=0x6b2814},
+		Area={0,0,1920,1080},
+	})
+Data.数据下载=multiPoint:new({
+		{x=623,y=293,color=0x4a82de},
+		{x=1202,y=294,color=0x4a82de},
+		{x=584,y=725,color=0xf7f7f7},
+		{x=877,y=718,color=0x84d3ff},
+		{x=1049,y=715,color=0x84d7ff},
+		{x=1166,y=716,color=0x84d6ff},
+		{x=1332,y=717,color=0x84d4ff},
+		{x=951,y=611,color=0xfff7f7},
+		_tag='数据下载',index={x=950,y=736}
+	})
+Data.剧情中=multiPoint:new({
+		{x=1831,y=58,color=0x679cff},
+		{x=1831,y=75,color=0x6b9eff},
+		{x=1831,y=87,color=0x6a9dff},
+		{x=1834,y=46,color=0xffffff},
+		{x=1838,y=124,color=0xffffff},
+		_tag='剧情中',index={x=1836,y=77}
+	})
+Data.弹窗=multiPoint:new({
+		{x=573,y=292,color=0x4a84de},
+		{x=1292,y=291,color=0x4a86de},
+		{x=596,y=739,color=0xffffff},
+		{x=857,y=739,color=0xffffff},
+		{x=1085,y=743,color=0x4a8afe},
+		{x=1302,y=737,color=0x5196ff},
+		_tag='弹窗',index={x=1168,y=737}
+	})
+Data.技能强化=multiPoint:new({
+		{x=49,y=48,color=0x6aa0ff},
+		{x=664,y=847,color=0x84d3ff},
+		{x=840,y=875,color=0x4a8aff},
+		{x=497,y=1051,color=0xf7cf8c},
+		_tag='技能强化'
+	})
+Data.探索页面=multiPoint:new({
+		{x=50,y=52,color=0x6ba2ff},
+		{x=1614,y=485,color=0x82e890},
+		{x=1306,y=711,color=0xfffbff},
+		{x=1731,y=712,color=0xffffff},
+		{x=1709,y=61,color=0x4a8ef8},
+		{x=1239,y=378,color=0xef2129},
+		_tag='探索页面'
+	})
+Data.内容解锁=multiPoint:new({
+		{x=673,y=290,color=0x4a86de},
+		{x=1231,y=287,color=0x4a88de},
+		{x=858,y=745,color=0xffffff},
+		{x=1075,y=741,color=0xffffff},
+		_tag='内容解锁',index={x=949,y=739}
+	})
+Data.竞技场=multiPoint:new({
+		{x=1835,y=175,color=0x6b9eff},
+		{x=52,y=52,color=0x6ba2ff},
+		{x=276,y=654,color=0x5a96f7},
+		{x=277,y=701,color=0x5a96f7},
+		{x=252,y=760,color=0x5a96f7},
+		{x=514,y=760,color=0x5a96f7},
+		{x=303,y=854,color=0xffffff},
+		{x=593,y=849,color=0xffffff},
+		_tag='竞技场',
+	})
+Data.商店=multiPoint:new({
+		{x=51,y=50,color=0x6ba2ff},
+		{x=1507,y=47,color=0xffffff},
+		{x=1307,y=143,color=0xfe8fef},
+		{x=264,y=737,color=0xff82ad},
+		{x=213,y=97,color=0x4a1800},
+		_tag='商店'
+	})
+Data.返回按钮=point:new({x=78,y=60,color=0xffffff})
+Data.体力回复_ok=point:new({x=1119,y=737,color=0xffffff})
+Data.剧情跳过=point:new({x=1611,y=85,color=0x84aeff})
+----////////////////////////////////////////////////////////////////////////////
+--活动
+Data.活动页面=multiPoint:new({
+		{x=1819,y=711,color=0xffffff},
+		{x=1813,y=667,color=0xffffff},
+		{x=1714,y=60,color=0x4e8ef7},
+		{x=1246,y=713,color=0x5a96ef},
+		{x=1008,y=678,color=0x72e76a},
+		{x=1840,y=847,color=0xef4d4a},
+		_tag='活动页面'
+	})
+Data.活动任务页面=multiPoint:new({
+		{x=51,y=49,color=0x6ba2ff},
+		{x=349,y=746,color=0xff7db4},
+		{x=1192,y=905,color=0x5a96ef},
+		{x=848,y=759,color=0xe7424a},
+		_tag='活动任务页面'
+	})
+Data.活动页面_活动关卡=point:new({x=1107,y=346,color=0x73cfca})
+Data.活动关卡_任务=point:new({x=1826,y=853,color=0x96947d})
+Data.活动关卡页面=multiPoint:new({
+		{x=1099,y=1047,color=0xaddfff},
+		{x=1396,y=830,color=0x5a96ef},
+		{x=1388,y=889,color=0x5a96ef},
+		{x=53,y=49,color=0x6ba2ff},
+		{x=1839,y=846,color=0xef4d4a},
+		{x=1806,y=848,color=0xe85051},
+		_tag='活动关卡页面'
+	})
+Data.讨伐证交换=multiPoint:new({
+		{x=52,y=49,color=0x6ba2ff},
+		{x=863,y=130,color=0x5a96ef},
+		{x=905,y=110,color=0x5a96ef},
+		{x=955,y=114,color=0x5a96ef},
+		{x=1292,y=124,color=0xe7ebe7},
+		{x=1578,y=122,color=0xe7e8e8},
+		_tag='讨伐证交换',
+	})
+Data.活动地图={
+	['伊莉亚活动']=multiPoint:new({
+			{x=460,y=572,color=0xf7f3c6},
+			{x=583,y=592,color=0xf7f3c6},
+			{x=763,y=579,color=0xf7f3c6},
+			{x=877,y=535,color=0xf7f3c6},
+			{x=1064,y=672,color=0xf7f3c6},
+			{x=1252,y=595,color=0xf7f3c6},
+			{x=1371,y=586,color=0xf7f3c6},
+			_tag='伊莉亚活动'
+		}),
+	
+	
+}
+Data.活动一图={
+	['伊莉亚活动']=point:new{x=348,y=645,color=0xcfd4d2},
+	
+}
+
+return Data
